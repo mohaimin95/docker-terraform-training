@@ -1,13 +1,13 @@
 services:
   web:
     container_name: frontend
-    build: ./ui-terraform-training
+    build: ../ui-terraform-training
     ports:
       - 3000:3000
 
   api:
     container_name: backend
-    build: ./server-terraform-training # specifying path of Dockerfile i.e current dir
+    build: ../server-terraform-training # specifying path of Dockerfile i.e current dir
     ports:
       - 3001:3001
     environment:
