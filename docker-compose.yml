@@ -16,6 +16,6 @@ services:
   nginx:
     image: nginx:1.25.4-alpine-slim
     ports:
-      - '${PORT:-4200}:${PORT:-4200}'
+      - '80:80'
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro # Mount the nginx.conf file
